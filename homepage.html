@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--codingflicks.com-->
+<head>
+	<meta charset="UTF-8">
+	<title>Video Slideshow using HTML CSS and Javascript</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+}
+video {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	transition: all 150ms linear;
+	z-index: 10;
+}
+.box1 {
+	opacity: 1;
+}
+.box2 {
+	opacity: 0;
+}
+.box3 {
+	opacity: 0;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+    </style>
+	<div class="container">
+		<video autoplay="" class="box1" id="box1" src="12.mp4"></video> 
+		<video autoplay="" class="box2" id="box2" src="22 (2).mp4"></video> 
+		<video autoplay="" class="box3" id="box3" src="22 (3).mp4"></video>
+	</div>
+	<script>
+	   
+	   
+	       var box1 = document.getElementById('box1');
+	       var box2 = document.getElementById('box2');
+	       var box3 = document.getElementById('box3');
+	   
+	       box1.onended = function () {
+	           box2.play();
+	           box1.style.opacity=0;
+	           box2.style.opacity=1;
+	       }
+	       box2.onended = function () {
+	           box3.play();
+	           box2.style.opacity=0;
+	           box3.style.opacity=1;
+	       }
+	       box3.onended = function () {
+	           box1.play();
+	           box3.style.opacity=0;
+	           box1.style.opacity=1;
+	       }
+	   
+	</script>
+</body>
+</html>

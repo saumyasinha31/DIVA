@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></link>
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Women Care</title>
+  </head>
+  <body>
+    <style>
+      :root {
+    --primary-color:rgb(62, 35, 80);
+    --color-white: #fff;
+    --color-black: rgb(46, 38, 24);
+  }
+  
+  *
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    min-height: 100vh;
+    line-height: 1.6;
+    background: url('pict_large.jpg');
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  
+  .heading-primary {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1;
+    color: white;
+    margin-bottom: 0rem;
+    padding: 200px;
+  }
+  
+  .heading-secondary {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+  
+  .heading-tertiary {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+  }
+  
+  /* header  */
+  .header {
+    height: 10vh;
+    display: flex;
+  }
+  
+  .header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: var(--primary-color);
+    padding-left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .header ul {
+    list-style: disc;
+    display: block;
+  }
+  .header ul li{
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  
+  .navbar{
+    text-transform: capitalize;
+    /* padding-right: 0rem; */
+  }
+  .h1{
+    margin:50vh;
+    padding: 700px;
+   
+  }
+  @media(max-width:950px) {}
+    /* .hero-img,
+    .sub-nav {
+      display: none;
+    }
+  
+    .content {
+      flex: 0 0 100%;
+    }
+  
+    .main-nav {
+      width: 100%;
+    } */
+    * {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  transition: 3s;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: auto;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:rgb(46, 38, 24);
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+<header class="header">
+    <!-- Left box for logo -->
+    <div class="left">
+<!-- <img src="img/gym.bg.jpg" alt="My Gym"> -->
+     <div>Women Health and Care</div>
+    </div>
+         <!-- Right box for buttons -->
+         <!-- <div class="right">
+<button class="btn">Sign Up</button>
+
+         </div> -->
+         <!-- Mid box for navbar -->
+         <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact Us</a></li>
+                
+                
+            </ul>
+         </div>
+   </header>
+
+<div class="container">
+  <div class="hero">
+    <div class="content">
+      <h1 class="heading-primary">
+        We are here to help you build you'r dream project
+      </h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut odit, magni doloremque ratione itaque necessitatibus illo aliquid suscipit tempore blanditiis reprehenderit illum, dolorum exercitationem cupiditate modi voluptas? Magni, nobis ipsam.
+      </p>
+
+      
+    </div>
+
+    
+  </div>
+</div>
+<!-- <img src="pict_large.jpg" alt="My girls" height="510px" width="400px "> -->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+<div class="numbertext">1 / 3</div>
+<img src="Maristella-Smiraglia-Taekwondo-black-belt-Italy-Martial-Arts-Females-2021-9.webp" style="width:100%">
+<div class="text">Meditation using VR:
+    For this section, you can create a calming and peaceful UI design that would help the users to relax their mind. You can use pastel colors and soothing images to create a relaxing ambiance. You can also add a VR player that allows users to choose different meditation themes and environments. This section can have features such as progress tracking, reminders, and daily meditation challenges.
+    </div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 3</div>
+<img src="maxresdefault.jpg" style="width:100%">
+<div class="text">Workout using AR:
+    In this section, you can use a bright and bold UI design to give users an energetic and lively feel. You can use images and graphics that represent different workout moves and equipment. You can also incorporate AR technology that allows users to see themselves performing exercises and correct their posture. This section can have features such as progress tracking, personalized workout plans, and social sharing.
+    
+    </div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 3</div>
+<img src="pict_large.jpg" style="width:100%">
+<div class="text">Tracking monthly cycles and other women-related issues:
+    This section can have a more personalized and private UI design to help users feel comfortable sharing their personal information. You can use colors and graphics that represent the different phases of a woman's cycle. You can also incorporate a calendar that helps users track their cycle and receive reminders for important dates. This section can also have a blog section that discusses women's health issues and provides tips and advice.
+    </div>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+  
+
+  
